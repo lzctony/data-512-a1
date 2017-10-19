@@ -18,7 +18,13 @@ We collect the data for all months from both APIs in a Jupyter Notebook. Then sa
 * **Pageviews Data:** it provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017. When collecting the pageview data, we set the parameters agent' = user and 'granularity' = monthly. We excludes the spiders and crawlers when selecting the agent parameter.
 
 ## Final Data File
-The final data file (en-wikipedia_traffic_200801-201709.csv) is comprised from pagecounts_desktop-site_200801-201607.json, pagecounts_mobile-site_200801-201607.json pageviews_desktop_201508-201709.json, pageviews_mobile-app_201508-201709.json and pageviews_mobile-web_201508-201709.json. We use **Jupyter Notebook** to write functions and use **Pandas** to manipulate those json datasets in order to achieve our output date file. The values of all variables of the final data file are shown below
+The final data file (**en-wikipedia_traffic_200801-201709.csv**) is comprised from 
+* pagecounts_desktop-site_200801-201607.json
+* pagecounts_mobile-site_200801-201607.json
+* pageviews_desktop_201508-201709.json
+* pageviews_mobile-app_201508-201709.json
+* pageviews_mobile-web_201508-201709.json. 
+We use **Jupyter Notebook** to write functions and use **Pandas** to manipulate those json datasets in order to achieve our output date file. The values of all variables of the final data file are shown below
 
 * year: from 2008 to 2017
 * month: from 01 to 12
