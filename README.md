@@ -6,7 +6,7 @@ I use Jupyter Notebook write Python code to access, manipulate and plot the data
 
 You can install Python and Jupyter Notebook by downloading **Python 3.6** version from [ANACONDA](https://www.anaconda.com/download/#macos)
 
-Python Packages:
+The following Python Packages are used to produce the final visulization:
 * **requests**
 * **json**
 * **pandas**
