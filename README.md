@@ -1,6 +1,18 @@
 # Data 512 A1: Data curation
 The goal of this project is to construct, analyze and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through Sepermber 30 2017. We are able to access the web data by using two different [Wikimedia REST API](https://www.mediawiki.org/wiki/REST_API) endpoins and combine different datasets from json formats into CSV in Python. Moreover, it we can followe the best practices for using pandas to manipulate the data frame and use matplotlib to generate a visulataion based on the output data file.
 
+## Tool
+I Jupyter Notebook write Python code to access, manipulate and plot the data.
+
+You can install Python and Jupyter Notebook by downloading Python 3.6 version from [ANACONDA](https://www.anaconda.com/download/#macos)
+
+Python Packages:
+* requests
+* json
+* pandas
+* matplotlib
+* seaborn
+
 ## License of The Source Data
 
 There are 2 APIs we mainly use for this project.
@@ -20,7 +32,7 @@ See more at [Wikimedia REST API](http://mediawiki.org/wiki/REST_API)
 [Software available under the Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Pagecouts & Pageview Data
-We collect the data for all months from both APIs in a Jupyter Notebook. Then save the raw results into 5 separate JSON source data files.
+Collect the data for all months from both APIs in a Jupyter Notebook. Then save the raw results into 5 separate JSON source data files.
 * **The legacy Pagecounts API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end))
 it provides access to desktop and mobile traffic data from January 2008 through July 2016. When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
 
@@ -35,7 +47,7 @@ The final data file (**en-wikipedia_traffic_200801-201709.csv**) is comprised fr
 * pageviews_mobile-app_201508-201709.json
 * pageviews_mobile-web_201508-201709.json
 
-We use **Jupyter Notebook** to write functions and use **Pandas** to manipulate those json datasets in order to achieve our output date file. The values of all variables of the final data file are shown below
+Use **Jupyter Notebook** to write functions and use **Pandas** to manipulate those json datasets in order to achieve our output date file. The values of all variables of the final data file are shown below
 
 * year: from 2008 to 2017
 * month: from 01 to 12
