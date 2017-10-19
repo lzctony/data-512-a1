@@ -3,11 +3,11 @@ The goal of this project is to construct, analyze and publish a dataset of month
 
 ## License of The Source Data
 
-There are 2 APIs we mainly use for this project. Here are the documentations, endpoints and terms.
+There are 2 APIs we mainly use for this project.
 
-* **The legacy Pagecounts API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end))
+* **The legacy Pagecounts API**
 
-* **The Pageviews API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
+* **The Pageviews API**
 
 By using these APIs, you agree to Wikimedia's Terms of Use and Privacy Policy.
 
@@ -21,9 +21,11 @@ See more at [Wikimedia REST API](http://mediawiki.org/wiki/REST_API)
 
 ## Pagecouts & Pageview Data
 We collect the data for all months from both APIs in a Jupyter Notebook. Then save the raw results into 5 separate JSON source data files.
-* **Pagecounts Data:** it provides access to desktop and mobile traffic data from January 2008 through July 2016. When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
+* **The legacy Pagecounts API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end))
+it provides access to desktop and mobile traffic data from January 2008 through July 2016. When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
 
-* **Pageviews Data:** it provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017. When collecting the pageview data, we set the parameters agent' = user and 'granularity' = monthly. We excludes the spiders and crawlers when selecting the agent parameter.
+* **The Pageviews API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
+it provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017. When collecting the pageview data, we set the parameters agent' = user and 'granularity' = monthly. We excludes the spiders and crawlers when selecting the agent parameter.
 
 ## Final Data File
 The final data file (**en-wikipedia_traffic_200801-201709.csv**) is comprised from 
