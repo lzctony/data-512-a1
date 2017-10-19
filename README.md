@@ -3,10 +3,7 @@ The goal of this project is to construct, analyze and publish a dataset of month
 
 ## License of The Source Data
 
-There are 2 APIs: 
-* **Pagecounts API:** provides access to desktop and mobile traffic data from January 2008 through July 2016.
-
-* **Pageviews API:** provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017.
+There are 2 APIs we mainly use for this project. Here are the documentations, endpoints and terms.
 
 * **The legacy Pagecounts API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end))
 
@@ -15,9 +12,10 @@ There are 2 APIs:
 * **Terms of Use** [(Wikimedia Foundation terms of use)](https://wikimediafoundation.org/wiki/Terms_of_Use/en)
 
 ## Pagecouts & Pageview Data
-* **Pagecounts Data:** When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
+We collect the data for all months from both APIs in a Jupyter Notebook. Then save the raw results into 5 separate JSON source data files.
+* **Pagecounts Data:** it provides access to desktop and mobile traffic data from January 2008 through July 2016. When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
 
-* **Pageviews Data:** When collecting the pageview data, we set the parameters agent' = user and 'granularity' = monthly. We excludes the spiders and crawlers when selecting the agent parameter.
+* **Pageviews Data:** it provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017. When collecting the pageview data, we set the parameters agent' = user and 'granularity' = monthly. We excludes the spiders and crawlers when selecting the agent parameter.
 
 ## Final Data File
 The final CSV file (en-wikipedia_traffic_200801-201709.csv)is comprised from pagecounts_desktop-site_200801-201607.json, pagecounts_mobile-site_200801-201607.json pageviews_desktop_201508-201709.json, pageviews_mobile-app_201508-201709.json and pageviews_mobile-web_201508-201709.json. The values of all variables are shown below
