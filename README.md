@@ -2,7 +2,7 @@
 The goal of this project is to construct, analyze and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through Sepermber 30 2017. We are able to access the web data by using two different [Wikimedia REST API](https://www.mediawiki.org/wiki/REST_API) endpoins and combine different datasets from json formats into CSV in Python. Moreover, it we can followe the best practices for using pandas to manipulate the data frame and use matplotlib to generate a visulataion based on the output data file.
 
 ## Tool
-I Jupyter Notebook write Python code to access, manipulate and plot the data.
+I use Jupyter Notebook write Python code to access, manipulate and plot the data.
 
 You can install Python and Jupyter Notebook by downloading **Python 3.6** version from [ANACONDA](https://www.anaconda.com/download/#macos)
 
