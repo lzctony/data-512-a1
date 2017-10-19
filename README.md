@@ -9,7 +9,14 @@ There are 2 APIs we mainly use for this project. Here are the documentations, en
 
 * **The Pageviews API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
 
+By using these APIs, you agree to Wikimedia's Terms of Use and Privacy Policy.
+
 * **Terms of Use** [(Wikimedia Foundation terms of use)](https://wikimediafoundation.org/wiki/Terms_of_Use/en)
+
+* **Privacy Policy** [(Privacy policy)](https://wikimediafoundation.org/wiki/Privacy_policy)
+
+See more at [Wikimedia REST API](http://mediawiki.org/wiki/REST_API)
+[Software available under the Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Pagecouts & Pageview Data
 We collect the data for all months from both APIs in a Jupyter Notebook. Then save the raw results into 5 separate JSON source data files.
