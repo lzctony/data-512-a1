@@ -30,3 +30,8 @@ The final CSV file (en-wikipedia_traffic_200801-201709.csv)is comprised from pag
 * pageview_all_views: sum of pagecount_desktop_views and pagecount_mobile_views
 * pageview_desktop_views: desktop traffic data from July 2015 through September 2017
 * pageview_mobile_views: mobile traffic data from July 2015 through September 2017
+
+## Visualization
+Here is the graph created by the final CSV file data. It shows the mobile traffic, desktop traffic and all traffic from Jan 2008 to Sep 2017 for both Pageviews and Pagecounts datasets respectively.
+
+![alt text](https://github.com/lzctony/data-512-a1/blob/master/en-wikipedia_traffic.png)
