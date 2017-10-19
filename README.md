@@ -16,6 +16,7 @@ By using these APIs, you agree to Wikimedia's Terms of Use and Privacy Policy.
 * **Privacy Policy** [(Privacy policy)](https://wikimediafoundation.org/wiki/Privacy_policy)
 
 See more at [Wikimedia REST API](http://mediawiki.org/wiki/REST_API)
+
 [Software available under the Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Pagecouts & Pageview Data
