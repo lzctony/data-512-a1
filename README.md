@@ -4,14 +4,14 @@ The goal of this project is to construct, analyze and publish a dataset of month
 ## Tool
 I Jupyter Notebook write Python code to access, manipulate and plot the data.
 
-You can install Python and Jupyter Notebook by downloading Python 3.6 version from [ANACONDA](https://www.anaconda.com/download/#macos)
+You can install Python and Jupyter Notebook by downloading **Python 3.6** version from [ANACONDA](https://www.anaconda.com/download/#macos)
 
 Python Packages:
-* requests
-* json
-* pandas
-* matplotlib
-* seaborn
+* **requests**
+* **json**
+* **pandas**
+* **matplotlib**
+* **seaborn**
 
 ## License of The Source Data
 
