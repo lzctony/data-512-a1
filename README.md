@@ -12,7 +12,7 @@ There are 2 APIs:
 
 * **The Pageviews API** ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
 
-* **Terms of Use** [Wikimedia Foundation terms of use](https://wikimediafoundation.org/wiki/Terms_of_Use/en)
+* **Terms of Use** [(Wikimedia Foundation terms of use)](https://wikimediafoundation.org/wiki/Terms_of_Use/en)
 
 ## Pagecouts & Pageview Data
 * **Pagecounts Data:** When collecting the pagecout data, it's different from the pageviews data, there is not parameter agent, so we don't have to choose.
