@@ -23,7 +23,8 @@ The final data file (**en-wikipedia_traffic_200801-201709.csv**) is comprised fr
 * pagecounts_mobile-site_200801-201607.json
 * pageviews_desktop_201508-201709.json
 * pageviews_mobile-app_201508-201709.json
-* pageviews_mobile-web_201508-201709.json. 
+* pageviews_mobile-web_201508-201709.json
+
 We use **Jupyter Notebook** to write functions and use **Pandas** to manipulate those json datasets in order to achieve our output date file. The values of all variables of the final data file are shown below
 
 * year: from 2008 to 2017
